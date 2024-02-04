@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranks - VeryGoodSand</title>
+    <link rel="icon" type="image/webp" href="favicon.webp">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap">
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background */
+            color: #dcdcdc; /* Light gray text color */
+            font-family: 'Oxanium', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden; /* Prevent scrollbars */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #333; /* Slightly lighter background for the header */
+            padding: 20px;
+            text-align: center;
+            color: #f36f6f; /* Dark red text color */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 3; /* Ensure the header is above other elements */
+        }
+
+        .profile-cutout {
+            width: 64px;
+            height: 64px;
+            background-color: #f36f6f; /* Dark red background color */
+            border-radius: 50%; /* Circular cutout */
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 4; /* Ensure the cutout is above other elements */
+            background-image: url('icon.webp'); /* Load icon.webp */
+            background-size: cover;
+        }
+
+        main {
+            width: 60%; /* Adjust the width as needed */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #2b2b2b; /* Slightly lighter background for the main content */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            border-radius: 12px; /* Rounded corners for the main content */
+            margin-top: 60px; /* Adjusted top margin to start below header */
+        }
+
+        h1, h2 {
+            font-size: 2.5rem;
+            color: #f36f6f; /* Dark red text color */
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #555, transparent);
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        .rank-option {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 2px solid #f36f6f; /* Dark red border */
+            border-radius: 8px; /* Add border-radius for rounded corners */
+            background-color: #444; /* Slightly lighter background color */
+            color: #ccc; /* Light gray text color */
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Add a smooth transition */
+        }
+
+        .rank-option:hover {
+            background-color: #5b1a1a; /* Darker red color on hover */
+        }
+
+        .rank-option:last-child {
+            margin-bottom: 0; /* Remove margin for the last option */
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="index.html" class="profile-cutout"></a>
+
+    <header>
+        <h1>VeryGoodSand</h1>
+    </header>
+
+    <main>
+        <h2>Rank Options</h2>
+        <hr>
+        <a href="https://verygoodsand.craftingstore.net/package/1113325" class="rank-option">Scribe ($2.99)</a>
+        <a href="https://verygoodsand.craftingstore.net/package/1113328" class="rank-option">Noble ($5.99)</a>
+        <a href="https://verygoodsand.craftingstore.net/package/1113331" class="rank-option">Vizer ($7.99)</a>
+        <a href="https://verygoodsand.craftingstore.net/package/1113334" class="rank-option">Pharaoh ($10.99)</a>
+        <a href="https://verygoodsand.craftingstore.net/package/1207998" class="rank-option">Custom Rank ($25)</a>
+    </main>
+
+</body>
+
+</html>
