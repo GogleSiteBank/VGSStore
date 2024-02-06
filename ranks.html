@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranks - VeryGoodSand</title>
+    <link rel="icon" type="image/webp" href="icon.webp">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap">
+    <style>
+        body {
+            background-color: #1a1a1a; 
+            color: #dcdcdc; 
+            font-family: 'Oxanium', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #333; 
+            padding: 20px;
+            text-align: center;
+            color: #f36f6f; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 3; 
+        }
+
+        .profile-cutout {
+            width: 64px;
+            height: 64px;
+            background-color: #f36f6f; 
+            border-radius: 50%; 
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 4; 
+            background-image: url('icon.webp'); 
+            background-size: cover;
+        }
+
+        main {
+            width: 60%; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #2b2b2b; 
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            border-radius: 12px; 
+            margin-top: 60px; 
+        }
+
+        h1, h2 {
+            font-size: 2.5rem;
+            color: #f36f6f; 
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #555, transparent);
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        .rank-option {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 2px solid #f36f6f; 
+            border-radius: 8px; 
+            background-color: #444; 
+            color: #ccc; 
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease; 
+        }
+
+        .rank-option:hover {
+            background-color: #5b1a1a; 
+        }
+
+        .rank-option:last-child {
+            margin-bottom: 0; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://site.verygoodsand.online" class="profile-cutout"></a>
+
+    <header>
+        <h1>VeryGoodSand</h1>
+    </header>
+
+    <main>
+        <h2>Rank Options</h2>
+        <hr>
+        <a href="https://verygoodsand.craftingstore.net/package/1113325" class="rank-option">Scribe ($2.99)</a>
+        <a href="https://verygoodsand.craftingstore.net/package/1113328" class="rank-option">Noble ($5.99)</a>
+        <a href="https://verygoodsand.craftingstore.net/package/1113331" class="rank-option">Vizer ($7.99)</a>
+        <a href="https://verygoodsand.craftingstore.net/package/1113334" class="rank-option">Pharaoh ($10.99)</a>
+        <a href="https://verygoodsand.craftingstore.net/package/1207998" class="rank-option">Custom Rank ($25)</a>
+
+        <a href="rankperks.html" class="rank-option">Rank Perks</a>
+        
+    </main>
+
+</body>
+
+</html>
