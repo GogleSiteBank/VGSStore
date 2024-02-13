@@ -9,49 +9,41 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap">
     <style>
         body {
-            background-color: #1a1a1a; 
-            color: #dcdcdc; 
+            background-color: #1a1a1a;
+            color: #dcdcdc;
             font-family: 'Oxanium', sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            overflow: hidden; 
+            overflow: hidden;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
         }
 
         header {
-            background-color: #333; 
+            background-color: #333;
             padding: 20px;
             text-align: center;
-            color: #f36f6f; 
+            color: #f36f6f;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             width: 100%;
             position: fixed;
             top: 0;
-            z-index: 3; 
+            z-index: 3;
         }
 
         main {
-            width: 60%; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #2b2b2b; 
+            width: 60%;
+            max-width: 800px;
+            margin-top: 80px;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-            border-radius: 12px; 
-            margin-top: 60px; 
         }
 
-        h2 {
-            font-size: 2.5rem;
-            color: #f36f6f; 
-            margin-bottom: 20px;
+        h1, h2, h3 {
+            margin-top: 0;
         }
 
         .rank-perks {
@@ -59,27 +51,58 @@
             padding: 15px;
             margin-bottom: 10px;
             box-sizing: border-box;
+            border: 2px solid #f36f6f;
+            border-radius: 8px;
+            background-color: #444;
+            color: #ccc;
+            font-size: 13px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .rank-perks:last-child {
+            margin-bottom: 0;
+        }
+
+        .purchase-button {
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            box-sizing: border-box;
             border: 2px solid #f36f6f; 
             border-radius: 8px; 
             background-color: #444; 
             color: #ccc; 
-            font-size: 16px;
+            font-size: 11px;
             text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease; 
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .purchase-button:hover {
+            background-color: #5b1a1a; 
+        }
+
+        .purchase-button a {
+            color: #ccc;
+            text-decoration: none;
         }
 
         .profile-cutout {
             width: 64px;
             height: 64px;
-            background-color: #f36f6f; 
-            border-radius: 50%; 
+            background-color: #f36f6f;
+            border-radius: 50%;
             position: fixed;
             top: 10px;
             right: 10px;
-            z-index: 4; 
-            background-image: url('icon.webp'); 
+            z-index: 4;
+            background-image: url('icon.webp');
             background-size: cover;
         }
-        
     </style>
 </head>
 
@@ -91,17 +114,18 @@
     </header>
 
     <main>
-        <h2>Rank Perks</h2>
         <div class="rank-perks">
             <h3>Scribe ($2.99)</h3>
             <p>Tab priority</p>
             <p>/dailykeyall</p>
+            <button class="purchase-button" onclick="window.location.href='ranks.html'">Purchase</button>
         </div>
         <div class="rank-perks">
             <h3>Noble ($5.99)</h3>
             <p>Tab priority</p>
             <p>/ironkeyall</p>
             <p>/nick</p>
+            <button class="purchase-button" onclick="window.location.href='ranks.html'">Purchase</button>
         </div>
         <div class="rank-perks">
             <h3>Vizer ($7.99)</h3>
@@ -109,6 +133,7 @@
             <p>/diamondkeyall</p>
             <p>/chatcolor (and regular chat color e.g: &bBlue)</p>
             <p>/nick</p>
+            <button class="purchase-button" onclick="window.location.href='ranks.html'">Purchase</button>
         </div>
         <div class="rank-perks">
             <h3>Pharaoh ($10.99)</h3>
@@ -116,6 +141,7 @@
             <p>/emeraldkeyall</p>
             <p>/chatcolor (and regular chat color e.g: &bBlue)</p>
             <p>/nick</p>
+            <button class="purchase-button" onclick="window.location.href='ranks.html'">Purchase</button>
         </div>
         <div class="rank-perks">
             <h3>Custom Rank ($25)</h3>
@@ -123,6 +149,7 @@
             <p>Custom Prefix</p>
             <p>Limited Server Access - Reserved in playtests and whitelisted.</p>
             <p>11 Total Emerald Keyalls per day (custom 10 keyall command + every other keyall)</p>
+            <button class="purchase-button" onclick="window.location.href='ranks.html'">Purchase</button>
         </div>
     </main>
 
