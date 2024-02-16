@@ -9,13 +9,13 @@
     <link rel="icon" type="image/webp" href="icon.webp">
     <style>
         body {
-            background-color: #1a1a1a; 
-            color: #dcdcdc; 
+            background-color: #1a1a1a;
+            color: #dcdcdc;
             font-family: 'Oxanium', sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            overflow: hidden; 
+            overflow: auto; 
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -24,46 +24,48 @@
         }
 
         header {
-            background-color: #333; 
+            background-color: #333;
             padding: 20px;
             text-align: center;
-            color: #f36f6f; 
+            color: #f36f6f;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             width: 100%;
             position: fixed;
             top: 0;
-            z-index: 3; 
+            z-index: 3;
         }
 
         .profile-cutout {
             width: 64px;
             height: 64px;
-            background-color: #f36f6f; 
-            border-radius: 50%; 
+            background-color: #f36f6f;
+            border-radius: 50%;
             position: fixed;
             top: 10px;
             right: 10px;
-            z-index: 4; 
-            background-image: url('icon.webp'); 
+            z-index: 4;
+            background-image: url('icon.webp');
             background-size: cover;
         }
 
         main {
-            width: 60%; 
+            width: 60%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: #2b2b2b; 
+            background-color: #2b2b2b;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-            border-radius: 12px; 
-            margin-top: 60px; 
+            border-radius: 12px;
+            margin-top: 60px;
+            overflow: auto; 
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             font-size: 2.5rem;
-            color: #f36f6f; 
+            color: #f36f6f;
             margin-bottom: 20px;
         }
 
@@ -107,6 +109,17 @@
             width: 40px;
             height: 40px;
             margin-bottom: 10px; 
+        }
+
+        @media only screen and (max-width: 600px) {
+            h1,
+            h2 {
+                font-size: 2rem; 
+            }
+
+            .button {
+                font-size: 16px; 
+            }
         }
     </style>
 </head>
